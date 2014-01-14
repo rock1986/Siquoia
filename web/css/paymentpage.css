@@ -1,0 +1,353 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 25, 2013, 12:22:33 PM
+    Author     : rock
+*/
+body,
+html {
+	margin:0;
+	padding:0;
+	color:#000;
+	background:white;
+	font-size:12px;
+	font-family:Verdana;
+}
+#main {
+	width:1000px;
+	padding:0;
+	margin:0 auto;
+}
+#header {
+	width:1000px;
+	margin:0 auto;
+	padding:0;
+	line-height:0px;
+}
+
+h3 {
+	margin:0;
+	white-space:nowrap;
+}
+h4 {
+	clear:both;
+	margin:5px 0 5px 0;
+	padding:0 0 0 0;
+}
+
+.nowrap {
+	white-space:nowrap;
+}
+#top_html {
+	width:980px;
+        text-align: center;
+	margin:0 auto;	/* auto centers it on page */
+	padding: 5px 10px;
+}
+#thank_you {
+	min-height:400px;
+}
+#thank_you h1.autothankyou,
+#thank_you p.autothankyou {
+	text-align:center;
+}
+#top_html p {
+	margin:0;
+	padding:0;	/*tidy wraps this in a <p></p> & p inherits css - must deal with this*/
+}
+div#content {
+	margin: 0px auto;
+	padding: 20px;
+	width: 960px;
+	display:none;
+}
+div#float-container {
+	margin: 0px auto;
+	padding: 0px 0px 20px 0px;
+	width: 960px;
+	overflow: hidden;
+}
+div#col_left {
+	float:left;
+	width:400px;
+	margin: 0px;
+	padding: 20px;
+}
+div#col_right {
+	float:right;
+	width:450px;
+	margin: 0px;
+	padding: 20px;
+}
+div#col_left, div#col_right {
+	margin-bottom:-1000px;
+	padding-bottom:1000px;
+}
+#col_left div.row, #col_right div.row {
+	margin-bottom: 5px;
+}
+#col_left .cell_left {
+	float:left;
+	clear:left;
+	width:200px;
+	padding: 3px 0px 6px 0px;
+}
+#col_left .cell_right {
+	float:right;
+	width:200px;
+	padding: 3px 0px;
+}
+
+div#col_left_bottom {
+	margin: 20px 0 0;
+}
+#col_left_bottom div.row, #col_right div.row {
+	clear:both;
+}
+#col_left_bottom .cell_left {
+	float:left;
+	clear:left;
+	width:140px;
+	padding: 3px 0px;
+}
+#col_left_bottom .cell_right {
+	float:right;
+	width:255px;
+	padding: 3px 0px;
+}
+
+div.cell_double h3 {
+	padding-bottom: 3px;
+	margin-bottom: 8px;
+	border-bottom: 1px dotted #666666;
+	}
+
+div.cell_double img.cc, div.cell_double img.cc_gs, div.cell_double img.ck, div.cell_double img.ck_gs {
+	margin: 0px 4px 4px 0px;
+	}
+
+#amount_0 {
+	margin-top: 2px;
+}
+#subtotal {
+	margin-top: 10px;
+	text-align:center;
+	vertical-align:middle;
+	font-weight:bold;
+	background-color: #fff;
+	border: 1px dotted #666;
+}
+#col_right .cell_left {
+	padding: 3px 0px;
+	width:120px;
+	white-space:nowrap;
+	float:left;
+	clear:left;
+}
+#col_right .cell_right {
+	float:right;
+	padding: 3px 0px;
+	width:330px;
+}
+
+
+#routing_num, #account_num {
+	width:90px;
+}
+
+form.pmtpg input[type="text"], form.pmtpg select, form.pmtpg textarea {
+border-color:#636D77 #A3B4C4 #C7D2DE;
+border-style:solid;
+border-width:1px;
+}
+
+form.pmtpg input[type=radio], form.pmtpg input[type=checkbox], form.pmtpg select  {
+	margin-left:0;	/* for mozilla */
+	padding-left:0;	/* for ie */
+}
+form.pmtpg textarea,
+form.pmtpg select#bill_country,
+form.pmtpg select#ship_country,
+form.pmtpg select#contact_country,
+form.pmtpg input[type=text] {
+	width:250px;
+}
+.hide {
+	display:none;
+}
+form .errormessage {
+	color:red;
+	font-size:9px;
+	text-align:left;
+}
+div span {
+	color:black;
+}
+
+.float_left {
+	float:left;
+}
+
+div#error_container {
+	clear:both;
+	width:980px;
+	background-color:#fff;
+	margin:0px auto;
+	padding:20px 10px 30px;
+}
+div.error {
+	color:red;
+	border-bottom:2px dotted red;
+}
+div#error_container img,div#dialog-alert img {
+	float:left;
+	margin:0px 5px 0px 0px;
+	width:16px;
+	height:16px;
+	vertical-align:middle;
+}
+
+div#error_container p, div#error_container ul {
+	float:left;
+	margin:2px 0px 0px 0px;
+	padding:0px;
+	width:90%;
+	vertical-align:middle;
+}
+
+div#error_container a#toggleerror {
+	float:right;
+	margin:2px 0px 0px 0px;
+	padding:0px;
+	vertical-align:middle;
+}
+
+div.error p, div.error ul li {
+	color:red;
+}
+div.status p, div.status ul li {
+	color:#1f6ea5;
+}
+
+.left {text-align:left;}
+.center {text-align:center;}
+.right {text-align:right;}
+
+#footer {
+	clear:both;
+	width:980px;
+	margin:0 auto;	/* auto centers it on page */
+	padding:5px 10px;
+}
+#html_footer {
+	width:980px;
+	margin:0 auto;	/* auto centers it on page */
+	padding:0 10px;
+}
+#footer p {
+	margin:0;
+}
+
+div.clearboth {
+clear:both;
+}
+/* Hide check fields by default--must be declared after .row */
+div.ck,
+img.cc_gs,
+img.ck_gs {
+display: none;
+}
+
+.display_none {
+display:none;
+}
+
+#javascripttest {
+	height: 100%;
+	width:960px;
+	text-align:center;
+	margin: 0 auto;
+	padding: 20px;
+	background-color:white;
+}
+#thank_you h1.autothankyou,#thank_you p.autothankyou,.center {
+ text-align:center;
+
+}
+#col_left_bottom div.row,#col_right div.row,div.clearboth {
+ clear:both;
+
+}
+.hide,div.ck,img.cc_gs,img.ck_gs,.display_none {
+ display:none;
+
+}
+a#security-code {
+font-size: 12px;
+color: #666;
+text-decoration: none;
+
+}
+a#security-code:hover {
+color: #000;
+
+}
+.reveal-modal-bg {
+position: fixed;
+height: 100%;
+width: 100%;
+background: #000;
+background: rgba(0,0,0,.8);
+z-index: 100;
+display: none;
+top: 0;
+left: 0;
+
+}
+.reveal-modal {
+visibility: hidden;
+top: 100px;
+left: 50%;
+margin-left: -220px;
+width: 440px;
+background: #fff;
+position: absolute;
+z-index: 101;
+padding: 10px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+-box-shadow: 0 0 10px rgba(0,0,0,.4);
+
+}
+.reveal-modal .close-reveal-modal {
+font-size: 22px;
+line-height: .5;
+position: absolute;
+top: 10px;
+right: 10px;
+color: #aaa;
+text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+font-weight: bold;
+cursor: pointer;
+
+}
+a#check-numbers {
+font-size: 12px;
+color: #666;
+text-decoration: none;
+
+}
+a#check-numbers:hover {
+color: #000;
+
+}
+div#check-numbers-window {
+padding: 20px;
+
+}
